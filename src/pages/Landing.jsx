@@ -69,7 +69,7 @@ export default function LandingPage() {
           </div>
 
           <div className="relative mt-8 lg:mt-0">
-            <div className="relative h-[523px] opacity-5 top-[54px]">
+            <div className="relative h-[523px] opacity-5 top-[54px] sm:h-[300px]">
               <img
                 src={Upperpartlogo}
                 alt="Upperpartlogo"
@@ -86,7 +86,7 @@ export default function LandingPage() {
               alt="Student with notebook"
               width={720}
               height={784}
-              className="absolute bottom-[-80px] rounded-lg object-cover"
+              className="absolute md:bottom-[-80px] rounded-lg object-cover"
             /> 
           </div>
         </div>

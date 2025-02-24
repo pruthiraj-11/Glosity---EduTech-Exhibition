@@ -86,7 +86,7 @@ export default function LandingPage() {
               alt="Student with notebook"
               width={720}
               height={784}
-              className="absolute bottom-[-80px] rounded-lg object-cover"
+              className="absolute md:bottom-[-80px] rounded-lg object-cover"
             /> 
           </div>
         </div>

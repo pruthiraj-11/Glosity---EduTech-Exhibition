@@ -69,7 +69,7 @@ export default function LandingPage() {
           </div>
 
           <div className="relative mt-8 lg:mt-0">
-            <div className="relative h-[523px] opacity-5 top-[54px] sm:h-[300px]">
+            <div className="relative h-[523px] opacity-5 top-[54px]">
               <img
                 src={Upperpartlogo}
                 alt="Upperpartlogo"

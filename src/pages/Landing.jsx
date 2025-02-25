@@ -4,8 +4,17 @@ import Logo from "../assets/glosity.png";
 import Download from "../assets/download.png";
 import Lowerpartlogo from "../assets/Lowerpartlogo.svg";
 import Upperpartlogo from "../assets/Upperpartlogo.svg";
+import { saveAs } from "file-saver";
 
 export default function LandingPage() {
+  const handleDownloadBrochure = () => {
+    saveAs("../assets/brochure.pdf", "glosity-brochure.pdf");
+  };
+
+  const handleDownloadFAQ = () => {
+    saveAs("../assets/glosityfaq.pdf", "glosity-faq.pdf");
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-r from-[#043A2D] to-[#121212] p-4 md:p-6 lg:p-8">
       <div className="mx-auto max-w-7xl">
@@ -25,18 +34,20 @@ export default function LandingPage() {
         <div className="grid gap-8 lg:grid-cols-2 lg:gap-12">
           <div className="space-y-8">
             <h1 className="text-4xl font-600 tracking-tight text-white sm:text-5xl xl:text-6xl">
-              Get Rewarded for{" "}
-              <span className="block">Skills, Not Pedigree.</span>
+              Transform the Job Marketplace{" "}
             </h1>
 
             <p className="max-w-xl text-400 text-[16px] leading-[24px] text-gray-200">
-              Create a comprehensive profile that highlights your achievements,
-              projects, and skills. Present your work to potential employers and
-              stand out in the competitive job market.
+              Glosity revolutionizes hiring with human-like Al agents that
+              automate interviews and assessments, making the process scalable,
+              high-quality, and free from logistical challenges.
             </p>
 
             <div className="flex flex-wrap gap-4">
-              <div className="bg-transparent text-white hover:bg-white/10 border-2 border-white rounded-full p-3">
+              <div
+                className="bg-transparent text-white hover:bg-white/10 border-2 border-white rounded-full p-3"
+                onClick={handleDownloadBrochure}
+              >
                 <a className="flex justify-between items-center gap-2" href="#">
                   DOWNLOAD BROCHURE
                   <div className="flex justify-center items-center relative bg-white rounded-full w-[36px] h-[36px]">
@@ -45,7 +56,10 @@ export default function LandingPage() {
                 </a>
               </div>
 
-              <div className="bg-transparent text-white hover:bg-white/10 border-2 border-white rounded-full p-3">
+              <div
+                className="bg-transparent text-white hover:bg-white/10 border-2 border-white rounded-full p-3"
+                onClick={handleDownloadFAQ}
+              >
                 <a className="flex justify-between items-center gap-2" href="#">
                   DOWNLOAD FAQ
                   <div className="flex justify-center items-center bg-white rounded-full w-[36px] h-[36px]">
@@ -87,7 +101,7 @@ export default function LandingPage() {
               width={720}
               height={784}
               className="absolute md:bottom-[-80px] rounded-lg object-cover"
-            /> 
+            />
           </div>
         </div>
       </div>

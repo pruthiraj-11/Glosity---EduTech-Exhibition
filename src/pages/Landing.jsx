@@ -46,9 +46,8 @@ export default function LandingPage() {
             <div className="flex flex-wrap gap-4">
               <div
                 className="bg-transparent text-white hover:bg-white/10 border-2 border-white rounded-full p-3"
-                onClick={handleDownloadBrochure}
               >
-                <a className="flex justify-between items-center gap-2" href="#">
+                <a className="flex justify-between items-center gap-2" href="#" download={"glosity-brochure.pdf"}>
                   DOWNLOAD BROCHURE
                   <div className="flex justify-center items-center relative bg-white rounded-full w-[36px] h-[36px]">
                     <img src={Download} className="p-2" />
@@ -58,9 +57,8 @@ export default function LandingPage() {
 
               <div
                 className="bg-transparent text-white hover:bg-white/10 border-2 border-white rounded-full p-3"
-                onClick={handleDownloadFAQ}
               >
-                <a className="flex justify-between items-center gap-2" href="#">
+                <a className="flex justify-between items-center gap-2" href="#" download={"/glosityfaq.pdf"}>
                   DOWNLOAD FAQ
                   <div className="flex justify-center items-center bg-white rounded-full w-[36px] h-[36px]">
                     <img src={Download} className="p-2" />
